@@ -5,7 +5,8 @@ from datetime import datetime
 import asyncio
 import time
 import random
- 
+import os
+
 bot = commands.Bot(command_prefix='차니야 ')
  
 @bot.event
@@ -138,4 +139,4 @@ async def letter(ctx, num):
     dis_day=datetime.strptime("20230125", "%Y%m%d")
     remain_day=dis_day-now
 
-bot.run('ODYwMzE5NTMzNTIzNzk1OTY4.YN5hAA.zOMJMtHPlRdx1DPrEY7sBJkJ7cA')
+bot.run(os.environ['token'])
