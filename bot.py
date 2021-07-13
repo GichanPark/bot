@@ -139,4 +139,6 @@ async def letter(ctx, num):
     dis_day=datetime.strptime("20230125", "%Y%m%d")
     remain_day=dis_day-now
 
-bot.run(os.environ['token'])
+    
+acess_token=os.environ["bot_token"]
+bot.run(acess_token)
